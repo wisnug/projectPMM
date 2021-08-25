@@ -22,63 +22,38 @@ class _HomeState extends State<Home> {
           padding: const EdgeInsets.all(10.0),
           child: Center(
             child: Container(
+                height: double.infinity,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image:
+                            new NetworkImage("lib/assets/images/back.jpeg"))),
                 child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                          width: 100.0,
-                          height: 100.0,
-                          decoration: new BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: new DecorationImage(
-                                  fit: BoxFit.fill,
-                                  image: new NetworkImage(
-                                      "lib/assets/images/flut.jpg")))),
-                      SizedBox(
-                        width: 30,
-                      ),
-                      Container(
-                          width: 100.0,
-                          height: 100.0,
-                          decoration: new BoxDecoration(
-                              shape: BoxShape.circle,
-                              image: new DecorationImage(
-                                  fit: BoxFit.fill,
-                                  image: new NetworkImage(
-                                      "lib/assets/images/flut.jpg")))),
-                    ],
-                  ),
-                ),
-                Padding(padding: EdgeInsets.only(top: 20)),
-                Text("Nama Aplikasi", style: TextStyle(color: Colors.cyan, fontSize: 35, fontWeight: FontWeight.bold),),
-                SizedBox(
-                  height: 70,
-                ),
-                RaisedButton(
-                  padding:
-                      EdgeInsets.only(top: 20, bottom: 20, left: 70, right: 70),
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(50)),
-                  color: Colors.brown,
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => add()),
-                    );
-                  },
-                  child: Text(
-                    "Buat kk",
-                    style: TextStyle(
-                      color: Colors.blue,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    SizedBox(
+                      height: 70,
                     ),
-                  ),
-                ),
-              ],
-            )),
+                    RaisedButton(
+                      padding: EdgeInsets.only(
+                          top: 20, bottom: 20, left: 70, right: 70),
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50)),
+                      color: Colors.white,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => add()),
+                        );
+                      },
+                      child: Text(
+                        "Masuk",
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                    ),
+                  ],
+                )),
           )),
     );
   }

@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:aplik/KK_Baru.dart';
+import 'package:aplik/Kartu_K.dart';
+import 'package:aplik/Akte.dart';
+import 'package:aplik/Surat.dart';
+import 'package:aplik/Informasi.dart';
 
 class add extends StatefulWidget {
   const add({Key? key}) : super(key: key);
@@ -21,17 +24,17 @@ class _addState extends State<add> {
           padding: EdgeInsets.only(top: 20, bottom: 20, left: 70, right: 70),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-          color: Colors.brown,
+          color: Colors.green,
           onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => kk_baru()),
+                      MaterialPageRoute(builder: (context) => kartu_k()),
                     );
                   },
           child: Text(
-            "Buat kk",
+            "BUAT KARTU KELUARGA",
             style: TextStyle(
-              color: Colors.blue,
+              color: Colors.white,
             ),
           ),
         ),
@@ -42,12 +45,17 @@ class _addState extends State<add> {
           padding: EdgeInsets.only(top: 20, bottom: 20, left: 70, right: 70),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-          color: Colors.brown,
-          onPressed: () {},
+          color: Colors.green,
+          onPressed: () {
+            Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => akte()),
+            );
+          },
           child: Text(
-            "Buat ktp",
+            "BUAT AKTE KELAHIRAN",
             style: TextStyle(
-              color: Colors.blue,
+              color: Colors.white,
             ),
           ),
         ),
@@ -58,31 +66,21 @@ class _addState extends State<add> {
           padding: EdgeInsets.only(top: 20, bottom: 20, left: 70, right: 70),
           shape:
               RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-          color: Colors.brown,
-          onPressed: () {},
+          color: Colors.green,
+          onPressed: () {
+            Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => surat()),
+            );
+          },
           child: Text(
-            "Buat surat-surat",
+            "BUAT SURAT-SURAT",
             style: TextStyle(
-              color: Colors.blue,
+              color: Colors.white,
             ),
           ),
         ),
-        SizedBox(
-          height: 30,
-        ),
-        RaisedButton(
-          padding: EdgeInsets.only(top: 20, bottom: 20, left: 70, right: 70),
-          shape:
-              RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
-          color: Colors.brown,
-          onPressed: () {},
-          child: Text(
-            "Informasi Desa",
-            style: TextStyle(
-              color: Colors.blue,
-            ),
-          ),
-        ),
+        
       ],
     )));
   }
