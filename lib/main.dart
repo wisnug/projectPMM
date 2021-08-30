@@ -31,7 +31,6 @@ class _HomeState extends State<Home> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-
                     SizedBox(
                       height: 300,
                     ),

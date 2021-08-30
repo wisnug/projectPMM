@@ -21,7 +21,7 @@ class _kartu_kState extends State<kartu_k> {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            padding: EdgeInsets.only(top: 50),
+            padding: EdgeInsets.only(top: 80),
             alignment: Alignment.topLeft,
             width: 200,
             height: 200,
@@ -30,13 +30,13 @@ class _kartu_kState extends State<kartu_k> {
           Expanded(
             child: Container(
               decoration: BoxDecoration(
-                color: Colors.black,
+                color: Color.fromRGBO(239, 239, 239, 1),
                 borderRadius: BorderRadius.only(
                     topRight: Radius.circular(25.0),
                     topLeft: Radius.circular(25.0)),
               ),
               padding:
-                  EdgeInsets.only(top: 20, left: 20, right: 20, bottom: 50),
+                  EdgeInsets.only(top: 20, left: 20, right: 20),
               width: double.infinity,
               child: Column(
                 children: [
@@ -50,7 +50,7 @@ class _kartu_kState extends State<kartu_k> {
                           top: 20, bottom: 20, left: 70, right: 70),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
-                      color: Colors.green,
+                      color: Color.fromRGBO(22, 144, 100, 1),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -75,7 +75,7 @@ class _kartu_kState extends State<kartu_k> {
                           top: 20, bottom: 20, left: 70, right: 70),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
-                      color: Colors.green,
+                      color: Color.fromRGBO(22, 144, 100, 1),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -100,7 +100,7 @@ class _kartu_kState extends State<kartu_k> {
                           top: 20, bottom: 20, left: 70, right: 70),
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(50)),
-                      color: Colors.green,
+                      color: Color.fromRGBO(22, 144, 100, 1),
                       onPressed: () {
                         Navigator.push(
                           context,
@@ -118,8 +118,8 @@ class _kartu_kState extends State<kartu_k> {
                   Spacer(),
                   Container(
                     alignment: Alignment.topLeft,
-                    width: 50,
-                    height: 50,
+                    width: 100,
+                    height: 100,
                     child: Image.asset("assets/images/jtsr2.png"),
                   ),
                 ],
