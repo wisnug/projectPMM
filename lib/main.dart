@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:aplik/add.dart';
-
+import 'add.dart';
 void main() {
   runApp(new MaterialApp(
     title: "Apps Desa",
@@ -19,19 +18,22 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: Padding(
-          padding: const EdgeInsets.all(10.0),
+          padding: const EdgeInsets.all(0.0),
           child: Center(
             child: Container(
+                width: double.infinity,
                 height: double.infinity,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image:
-                            new NetworkImage("lib/assets/images/back.jpeg"))),
+                        image: new AssetImage(
+                            "assets/images/back.jpeg"),
+                        fit: BoxFit.cover)),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+
                     SizedBox(
-                      height: 70,
+                      height: 300,
                     ),
                     RaisedButton(
                       padding: EdgeInsets.only(
@@ -58,3 +60,4 @@ class _HomeState extends State<Home> {
     );
   }
 }
+

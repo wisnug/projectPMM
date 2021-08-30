@@ -34,9 +34,14 @@ static const _url = 'http://api.whatsapp.com/send?phone=6285210967308';
               child: Container(
                padding: EdgeInsets.all(40),
                color: Colors.grey,
-               child: (
-                 Text("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.")
-               )
+               child: Column(
+        children: const <Widget>[
+            Text("1. Foto/scan formilir isian kartu keluarga (F1-01) distempel atau RT,RW dan kades atau lurah"),
+            Text("2. Foto/scan surat nikah atau akta nikah atau kutipan akta perkawinan"),
+            Text("3. Foto/scan akta kelahiran atau surat kelahiran bagi keluarga yang mempunyai anak"),
+
+        ],
+    )
              )
              ),
              SizedBox(
